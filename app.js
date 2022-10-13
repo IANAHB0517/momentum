@@ -28,6 +28,12 @@
 
 // const player = ["FTE", 1212, true, "Not"];
 
+// console.log(player);
+
+// player[1] = 1234;
+
+// console.log(player);
+
 // const player = {
 //     name: "FTE",
 //     points:1212,
@@ -69,19 +75,43 @@
 // plus(10, 15);
 // divide(98, 20);
 
-const player = {
-    name : "FTE",
-    sayHello: function (otherPersonName) {
-        console.log("Hello" + otherPersonName + "nice to meet you!")
+// const player = {
+//     name : "FTE",
+//     sayHello: function (otherPersonName) {
+//         console.log("Hello" + otherPersonName + "nice to meet you!")
+//     },
+// };
+
+// console.log(player.name);
+
+// player.sayHello("Lynn");
+
+// function plus (a, b) {
+//     console.log(a + b);
+// }
+
+// plus (4123421321, 2136546416);
+
+const calculator = {
+    plus : function(a, b) {
+        console.log(a + b);
+    },
+    minus : function (a, b) {
+         console.log(a - b);
+        },
+    divide : function (a, b) {
+         console.log(a / b);
+    },
+    multi : function (a, b) {
+         console.log(a * b);
+        },
+    crazy : function (a, b) {
+         console.log(a + b - a / b * a * 4 * b *-4);
     },
 };
 
-console.log(player.name);
 
-player.sayHello("Lynn");
 
-function plus (a, b) {
-    console.log(a + b);
-}
-
-plus (4123421321, 2136546416);
+calculator.plus (12, 4);
+calculator.minus (12, 4);
+calculator.crazy (12, 4);
