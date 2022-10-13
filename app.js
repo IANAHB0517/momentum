@@ -1,4 +1,4 @@
-const a = 10;
+var a = 10;
 const b = 2;
 
 let myName = "FTE";
