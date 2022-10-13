@@ -28,20 +28,60 @@
 
 // const player = ["FTE", 1212, true, "Not"];
 
-const player = {
-    name: "FTE",
-    points:1212,
-    Handsome:true,
-};
+// const player = {
+//     name: "FTE",
+//     points:1212,
+//     Handsome:true,
+// };
 
-console.log(player);
+// console.log(player);
+
+// console.log(player.name);
+
+// player.name = "FTE0517";
+
+// console.log(player["name"]);
+
+// player.lastName = "Jack";
+
+// player.points = player.points + 2424;
+
+// console.log(player);
+
+// function sayHello(nameOfPerson, age){
+//     console.log("Hello my nnameOfPersonme is "+ nameOfPerson +"and I'm " + age);
+// }
+
+// sayHello("FTE", 10);
+// sayHello("nico", 15);
+// sayHello("Lynn", 20);
+
+// function plus(a,b) {
+//     console.log(a + b);
+// }
+
+// function divide (a, b) {
+//     console.log (a/b);
+// }
+
+// console.log(a);
+
+// plus(10, 15);
+// divide(98, 20);
+
+const player = {
+    name : "FTE",
+    sayHello: function (otherPersonName) {
+        console.log("Hello" + otherPersonName + "nice to meet you!")
+    },
+};
 
 console.log(player.name);
 
-player.name = "FTE0517";
+player.sayHello("Lynn");
 
-console.log(player["name"]);
+function plus (a, b) {
+    console.log(a + b);
+}
 
-player.lastName = "Jack";
-
-console.log(player);
+plus (4123421321, 2136546416);
