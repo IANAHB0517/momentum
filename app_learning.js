@@ -208,39 +208,47 @@ const h1 = document.querySelector(".hello h1");
 // h1.style.color = "blue";
 
 function handleh1Click() {
-    h1.style.color = "blue";
+    const currentColor = h1.style.color;
+    let newColor;
+    if(currentColor === "blue") {
+        newColor = "tomato";
+    } else {
+        newColor = "blue"
+    }
+    h1.style.color = newColor;
 }
 
-function handlemouseenter() {
-    h1.innerText = "Mouse is here!!!"
-}
+// function handlemouseenter() {
+//     h1.innerText = "Mouse is here!!!"
+// }
 
-function handlemouseleave() {
-    h1.innerText = "Put on your mouse!"
+// function handlemouseleave() {
+//     h1.innerText = "Put on your mouse!"
     
-}
+// }
 
-function handleWindowResize() {
-    document.body.style.backgroundColor = "tomato";
-}
+// function handleWindowResize() {
+//     document.body.style.backgroundColor = "tomato";
+// }
 
-function handlewindowCopy() {
-    alert("You Can't copy this");
-}
+// function handlewindowCopy() {
+//     alert("You Can't copy this");
+// }
 
-function handlewindowOffline() {
-    alert("No Wifi SOS");
-}
+// function handlewindowOffline() {
+//     alert("No Wifi SOS");
+// }
 
-function handlewindowonline() {
-    alert("Happy with that");
-}
+// function handlewindowonline() {
+//     alert("Happy with that");
+// }
 
 h1.addEventListener("click", handleh1Click);
-h1.addEventListener("mouseenter", handlemouseenter);
-h1.addEventListener("mouseleave", handlemouseleave);
+// h1.addEventListener("mouseenter", handlemouseenter);
+// h1.addEventListener("mouseleave", handlemouseleave);
 
-window.addEventListener("resize", handleWindowResize)
-window.addEventListener("copy", handlewindowCopy);
-window.addEventListener("offline", handlewindowOffline);
-window.addEventListener("online", handlewindowonline);
+// window.addEventListener("resize", handleWindowResize)
+// window.addEventListener("copy", handlewindowCopy);
+// window.addEventListener("offline", handlewindowOffline);
+// window.addEventListener("online", handlewindowonline);
+
