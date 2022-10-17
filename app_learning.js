@@ -171,25 +171,36 @@
 // flase && true === false
 // flase && false === false
 
-const age = parseInt(
-    prompt(
-        "How old are you?"
-        )
-    );
+// const age = parseInt(
+//     prompt(
+//         "How old are you?"
+//         )
+//     );
 
 
-if(isNaN(age) || age < 0) {
-    console.log("Please write a real positive number");
-} else if (age < 18) {
-    console.log("Your are too young.");
-} else if (55 > age && age >=18 ) {
-    console.log("You can drink");
-} else if (80 > age && age >= 56) {
-    console.log("Don't drink too much.");
-} else if ( 100> age && age >= 81) {
-    console.log("You can do whatever you want if you can");
-} else if (age === 100) {
-    console.log ("Wow you are wise")
-} else if (age > 100) {
-    console.log ("glad to know your age!!")
-}
+// if(isNaN(age) || age < 0) {
+//     console.log("Please write a real positive number");
+// } else if (age < 18) {
+//     console.log("Your are too young.");
+// } else if (55 > age && age >=18 ) {
+//     console.log("You can drink");
+// } else if (80 > age && age >= 56) {
+//     console.log("Don't drink too much.");
+// } else if ( 100> age && age >= 81) {
+//     console.log("You can do whatever you want if you can");
+// } else if (age === 100) {
+//     console.log ("Wow you are wise")
+// } else if (age > 100) {
+//     console.log ("glad to know your age!!")
+// }
+
+
+// const hellos = document.getElementsByClassName("hello");
+
+// console.log(hellos)
+
+const title = document.querySelector(".hello h1");
+
+title.innerText = "Hello";
+
+console.log(title);
