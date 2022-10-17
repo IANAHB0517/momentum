@@ -207,15 +207,30 @@ const h1 = document.querySelector(".hello h1");
 
 // h1.style.color = "blue";
 
+
+// function handleh1Click() {
+//     const currentColor = h1.style.color;
+//     let newColor;
+//     if(currentColor === "blue") {
+//         newColor = "tomato";
+//     } else {
+//         newColor = "blue"
+//     }
+//     h1.style.color = newColor;
+// }
+
+
+// function handleh1Click() {
+//     const clickedClass = "clicked";
+//    if(h1.classList.contains(clickedClass)){
+//     h1.classList.remove(clickedClass);
+//    } else {
+//     h1.classList.add(clickedClass);
+//    }
+// }
 function handleh1Click() {
-    const currentColor = h1.style.color;
-    let newColor;
-    if(currentColor === "blue") {
-        newColor = "tomato";
-    } else {
-        newColor = "blue"
-    }
-    h1.style.color = newColor;
+    
+   h1.classList.toggle("clicked");
 }
 
 // function handlemouseenter() {
