@@ -199,7 +199,7 @@
 
 // console.log(hellos)
 
-const h1 = document.querySelector(".hello h1");
+// const h1 = document.querySelector(".hello h1");
 
 // h1.innerText = "Hello";
 
@@ -228,10 +228,10 @@ const h1 = document.querySelector(".hello h1");
 //     h1.classList.add(clickedClass);
 //    }
 // }
-function handleh1Click() {
+// function handleh1Click() {
     
-   h1.classList.toggle("clicked");
-}
+//    h1.classList.toggle("clicked");
+// }
 
 // function handlemouseenter() {
 //     h1.innerText = "Mouse is here!!!"
@@ -258,7 +258,7 @@ function handleh1Click() {
 //     alert("Happy with that");
 // }
 
-h1.addEventListener("click", handleh1Click);
+// h1.addEventListener("click", handleh1Click);
 // h1.addEventListener("mouseenter", handlemouseenter);
 // h1.addEventListener("mouseleave", handlemouseleave);
 
@@ -267,3 +267,22 @@ h1.addEventListener("click", handleh1Click);
 // window.addEventListener("offline", handlewindowOffline);
 // window.addEventListener("online", handlewindowonline);
 
+
+
+const fte = "WTF"
+
+const wtf = {
+    id: fte,
+    say: "hello",
+    // function: console.log("what the fuck is that?")
+}
+
+console.log(" " + "it's sucks")
+console.log(wtf.say)
+console.log(wtf.id)
+console.log(wtf.id)
+
+
+console.log(wtf.function)
+
+f

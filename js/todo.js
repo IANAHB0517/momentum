@@ -29,6 +29,8 @@ function paintTodo(newTodo){
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li);
+                                                        console.log(newTodo.id);
+                                                        console.log(newTodo.text);
 }
 
 function handleToDoSubmit(event){
@@ -42,24 +44,20 @@ function handleToDoSubmit(event){
     toDos.push(newTodoObj);
     paintTodo(newTodoObj);
     saveToDos();
+                                                        console.log(newTodoObj.id);
+                                                        console.log(newTodoObj.text);
+                                                        
+                                                                
 }
 
 toDoForm.addEventListener("submit",handleToDoSubmit);
 
-
 const savedTodos = localStorage.getItem(TODOS_KEY);
+
 if(savedTodos !== null) {
     const parsedToDos = JSON.parse(savedTodos);
     toDos = parsedToDos;
     parsedToDos.forEach(paintTodo);
 } 
 
-// function filter(todo) {
-//     return todo.id !== 
 
-// }
-
-// todos..filter(filter)
-
-
-// .filter
