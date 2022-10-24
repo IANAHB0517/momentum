@@ -29,23 +29,23 @@ function paintTodo(newTodo){
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li);
-                                                        console.log(newTodo.id);
-                                                        console.log(newTodo.text);
+                                                        // console.log(newTodo.id);
+                                                        // console.log(newTodo.text);
 }
 
 function handleToDoSubmit(event){
     event.preventDefault();
     const newTodo = toDoInput.value;
     toDoInput.value = "";
-    const newTodoObj = {
+    const nTObj = {
         text:newTodo,
         id: Date.now(),
     }
-    toDos.push(newTodoObj);
-    paintTodo(newTodoObj);
+    toDos.push(nTObj);
+    paintTodo(nTObj);
     saveToDos();
-                                                        console.log(newTodoObj.id);
-                                                        console.log(newTodoObj.text);
+                                                        // console.log(nTObj.id);
+                                                        // console.log(nTObj.text);
                                                         
                                                                 
 }

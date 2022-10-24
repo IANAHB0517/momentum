@@ -269,20 +269,20 @@
 
 
 
-const fte = "WTF"
+// const fte = "WTF"
 
-const wtf = {
-    id: fte,
-    say: "hello",
-    // function: console.log("what the fuck is that?")
-}
+// const wtf = {
+//     id: fte,
+//     say: "hello",
+//     // function: console.log("what the fuck is that?")
+// }
 
-console.log(" " + "it's sucks")
-console.log(wtf.say)
-console.log(wtf.id)
-console.log(wtf.id)
+// console.log(" " + "it's sucks")
+// console.log(wtf.say)
+// console.log(wtf.id)
+// console.log(wtf.id)
 
 
-console.log(wtf.function)
+// console.log(wtf.function)
 
-f
+// I understad that!!!
