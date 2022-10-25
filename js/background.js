@@ -1,9 +1,17 @@
 const images = ["0.jpg","1.jpg","2.jpg",];
-
 const chosenImage = images[Math.floor(Math.random()* images.length)];
+const body = document.querySelector("#container");
+const BGI = "backGroundImage";
 
-const bgImage = document.createElement("img");
+function createBGImg(){
+    body.classList.add(BGI);
+    // bgImage.src = `url(${chosenImage})`;
+    body.style.background =`url(img/${chosenImage}) no-repeat center center`;
+    body.style.backgroundSize = "cover";
+}
 
-bgImage.src = `img/${chosenImage}`;
+const checkClassList = body.classList.contains(BGI);
 
-document.body.appendChild(bgImage);
+if(checkClassList !== true){
+    createBGImg();
+}
